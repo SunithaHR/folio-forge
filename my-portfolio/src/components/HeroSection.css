@@ -1,0 +1,45 @@
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Shared Animated Gradient Background */
+  .animated-bg {
+    background: linear-gradient(-45deg, #1d2b64, #f8cdda, #283c86, #45a247);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: calc(100vh - 56px); /* Adjust based on navbar height */
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
